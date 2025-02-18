@@ -1,8 +1,8 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Samay Patel
+- **Dot Number**: patel.5517
+- **Due Date**: 1/31/25
 
 ## Assignment Overview
 
@@ -29,7 +29,6 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -67,7 +66,6 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,15 +104,15 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+My career goals is to graduate from Ohio State and get a job in a field related to
+Software Engineering in some way or form. I plan to specialize in either Artifical Intelligence
+or CyberSecurity, so my final career path will be determined by which path I choose from
+there. I plan to minor in statistics, to accompony with this. I feel like this project
+will be a great addition to my resume.
+
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -122,7 +120,9 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
+- Song model data structure (a queue-like structure of an object with song name, artist name, personal rating)
+- matrix data strucutre to model a 2-D version of arrays
+- A football lineup model, (an array-like structure that will have each football position assigned with a name as an index)
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -132,7 +132,6 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -200,68 +199,93 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: Song Structure
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - This component's purpose is to model a song and its properties. It will
+    be similar to the structure of a map, with attributes of the following values:
+    song name, artist name, individual ranking (given by user input).
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void addSong(String name, String artist, int rank)
+    - Song removeSong(String songName)
+    - Song removeAnySong()
+    - boolean isEmpty
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - int size()
+    - Song replaceArtist(String name, String artist)
+    - Song replaceRank(String name, int rank)
+    - void order()
+    - void shuffle()
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, basically all OSU components have to be mutable as long as they inherit from
+Standard. clear, newInstance, and transferFrom all mutate this
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, because the name acts like a key, and the artist and rank act like a value
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, because it is not numerical, everything is interepreted in strings
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, removeAnySong() can allow a counter to remove and add the songs back into the structure, allowing us
+      to get a value for the length()
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: Dynamic Matrix
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - A 2 dimensional array-like structure that would have rows and columns that start at index 0. It also updates dynamically,
+    meaning it does not have a set size, and instead increases with elements added.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void add(int row, int column)
+    - void remove (int row, int column)
+    - boolean isEmpty()
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - int rows()
+    - int columns()
+    - int largestValue()
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, basically all OSU components have to be mutable as long as they inherit from
+Standard. clear, newInstance, and transferFrom all mutate this
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, a group of rows or a group of columns would be set groups
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - no, that wouldn't be nessecary
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, you can use isEmpty in calculating the largestValue, since if the matrix is empty you wouldn't need to search
+      through any rows or columns because they wouldn't exist
+
+- Component Design #3: Lineup
+  - **Description**:
+    - This can be a LineUp feature for any sport, such as basketball, football ect. Users can make there own positions, and
+    assign string names of players to those positions. Each position name, player name will act as a pair value
+  - **Kernel Methods**:
+    - void add (position, name)
+    - Lineup remove (position)
+    - Lineup removeAny()
+  - **Secondary Methods**:
+    - Lineup replacePlayer(position)
+    - Lineup swapPlayers(position, position)
+    - int size()
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, basically all OSU components have to be mutable as long as they inherit from
+Standard. clear, newInstance, and transferFrom all mutate this
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - Yes, because each positon name, player name acts as a pair value
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - no, because there are no numerical values involved.
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - yes, you can because you can create replacePlayer and swapPlayer using the add and remove kernel methods
 
 ## Post-Assignment
 
@@ -319,11 +343,11 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
+
 
 ### Peer Review
 
-<!-- TODO: review the peer review guidelines then delete this comment -->
+
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the

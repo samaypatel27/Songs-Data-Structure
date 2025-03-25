@@ -1,17 +1,22 @@
-public interface SongListKernel {
+import components.queue.Queue;
+import components.standard.Standard;
+
+public interface SongListKernel extends Standard<SongList> {
     public record Song(String artist, String title, String album) {
 
     }
 
+    private SongList<Queue> playlist;
+
     /**
-     * @param Song
+     * @param s
      *            Song s to be added to the front of SongList
      * @updates q
      * @ensures <pre>
      * Song is added to the back of the SongList
      * </pre>
      */
-    void AddSong(Song s);
+    void addSong(Song s);
 
     /**
      * @updates q

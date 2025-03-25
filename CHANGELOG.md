@@ -19,8 +19,31 @@ the following form: YYYY.0M.0D.
 
 ### Added
 
+
 - Designed a proof of concept for Songs Component component
 
 ### Updated
 
 - SongList.java
+
+## 2025.02.03
+
+### Added
+
+- Designed a kernel and enhanced class for my data structure
+
+### Updated
+
+- SongList.Java
+- SongListKernel.Java
+
+
+## 2025.25.03
+
+### Added
+
+- Designed a secondary, abstract class for my data strcuture, providing specific implemtations and method bodies
+
+### Updated
+
+- SongListSecondary.java

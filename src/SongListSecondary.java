@@ -18,7 +18,7 @@ public abstract class SongListSecondary implements SongList {
     }
 
     @Override
-    public void skip() {
+    public Song skip() {
         Song s = this.removeSong();
         this.addSong(s);
     }
@@ -45,6 +45,17 @@ public abstract class SongListSecondary implements SongList {
         int rightRotations = (int) (Math.random() * (left.length())) + 1;
         left.rotate(leftRotations);
         right.rotate(rightRotations);
+
+    }
+
+    @Override
+    public String toString() {
+        return playFirst().toString();
+    }
+
+    @Override
+    public boolean equals(Song s1, Song s2) {
+        return s1.compareTo(s2);
 
     }
 

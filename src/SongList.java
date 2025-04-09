@@ -11,11 +11,12 @@ public interface SongList extends SongListKernel {
 
     /**
      * @updates q
+     * @return Song at the front of the playlist
      * @ensures <pre>
      * Song at the front is moved to the back of the SongList
      * </pre>
      */
-    void skip();
+    Song skip();
 
     /**
      * @updates q

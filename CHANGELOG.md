@@ -47,3 +47,13 @@ the following form: YYYY.0M.0D.
 ### Updated
 
 - SongListSecondary.java
+
+## 2025.10.04
+
+### Added
+
+- Designed a Kernel Implementation for my SongList class
+
+### Updated
+
+- SongList1L.java

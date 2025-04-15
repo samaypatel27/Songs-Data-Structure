@@ -21,6 +21,7 @@ public abstract class SongListSecondary implements SongList {
     public Song skip() {
         Song s = this.removeSong();
         this.addSong(s);
+        return s;
     }
 
     @Override
@@ -50,12 +51,25 @@ public abstract class SongListSecondary implements SongList {
 
     @Override
     public String toString() {
-        return playFirst().toString();
+        return this.playFirst().toString();
     }
 
     @Override
-    public boolean equals(Song s1, Song s2) {
-        return s1.compareTo(s2);
+    public boolean equals(Object o) {
+        boolean result = false;
+        if (this == o) {
+            SongList s = (SongList) o;
+            if (this.length() == s.length()) {
+                result = true;
+                for (int i = 0; i < this.length(); i++) {
+                    if (!(this.playFirst().equals(this.playFirst()))) {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return result;
 
     }
 

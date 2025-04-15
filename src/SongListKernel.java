@@ -1,12 +1,10 @@
-import components.queue.Queue;
 import components.standard.Standard;
 
 public interface SongListKernel extends Standard<SongList> {
+
     public record Song(String artist, String title, String album) {
 
     }
-
-    private SongList<Queue> playlist;
 
     /**
      * @param s

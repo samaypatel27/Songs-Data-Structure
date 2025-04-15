@@ -1,4 +1,5 @@
 import components.queue.Queue;
+import components.queue.Queue1L;
 
 /**
  * {@code {SongList} represented as a {@code Queue} with implementations of
@@ -7,7 +8,7 @@ import components.queue.Queue;
  * @convention <pre>
 * [all components of SongList all real songs with name, artist, and album]
 * </pre>
- * 
+ *
  * @correspondence <pre>
 * this = [if $this.playlist = "" then playlist is empty, and length is 0]
 * </pre>
@@ -21,6 +22,10 @@ public class SongList1L extends SongListSecondary {
      * private fields
      */
     private Queue<Song> playlist;
+
+    public SongList1L() {
+        this.playlist = new Queue1L();
+    }
 
     @Override
     public void addSong(Song s) {

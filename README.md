@@ -11,7 +11,7 @@ This project represents a data structure: SongList, based off a Song object, and
 
 This component is available for free use to anyone. To get started, you may clone the repository in git bash, or use the github desktop app.
 
-`git clone https://github.com/samaypatel27/Songs-Data-Structure.git'
+<pre> <code>```git clone https://github.com/samaypatel27/Songs-Data-Structure.git ```</code> </pre>
 
 Ensure you are in the "kernel-implementations" branch, as that has the latest updates.
 

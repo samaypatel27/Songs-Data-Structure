@@ -307,18 +307,26 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think I understand software devlopment a lot better. This components
+project has made get a better understanding of the layout of many data structures. This is really important
+especiailly when it comes to coding interivews and leetcode, because data structures are the foundational
+knowledge for many of the most common coding practices.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Yes, throughout the entirety of the past 2 semesters, I did not really understand the full purpose of Ohio State's
+strucutre when it comes to standard, kernel, and abstract class methods. Now, I completely understand why
+the classes and methods are strucutred in such a way, which is really made my knowledge better.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Even though this project was regarding creating my own data strcuture, my perspective on software development
+has overall stayed the same. I feel like creating something like this gives me a better foundational knowledge,
+but I don't really see how I could potentially use this in the real world unless I directly
+incorporate it into one of the projects I am currently working on.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -326,29 +334,43 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I think one important skill that I picked up was problem solving. I ran into many issues
+and has to ask a lot of questions to the TAs, but a grand majority of hte problems I looked into were by looking
+at how implementations on data strcutures in previous software II projects were implemented. Problem solving
+is a really important skill in CS, and is something that will take you very far in life.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Java data structures
+- JUnit test cases
+- API usage (OSU CSE components)
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I feel like this project has greatly affected my career trajectory. I don't nessecarily hate this topic that I picked,
+but I am definitely more interested in data structures. Over the summer, I plan to look more into this
+and understand the concepts a lot better. This playlist data strcuture could be really valuable for a project
+that I work with later on.
+
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+Some things I can do to create a better career trajectory is definitely applying with I learned and making
+other personal projects on my own. This project, and this class in general, had a lot of testing, and I feel
+like if I continue to build on what I know, I will definitely be very successful in the future. Some mentors
+you could contact to help you stay on your path is some of my current and past professors, as I feel like they
+will be really helpful
+
 
 ### Changelog
 
-<!-- TODO: update CHANGELOG then delete this comment -->
+
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -384,7 +406,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull

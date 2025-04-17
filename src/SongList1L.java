@@ -34,7 +34,11 @@ public class SongList1L extends SongListSecondary {
 
     @Override
     public SongListKernel.Song removeSong() {
-        return this.playlist.dequeue();
+        if (this.playlist.length() > 0) {
+            return this.playlist.dequeue();
+        }
+        return null;
+
     }
 
     @Override
